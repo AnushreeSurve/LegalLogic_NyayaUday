@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Junior Judge Simulation</title>
+    <link rel="stylesheet" href="judge.css" />
+  </head>
+  <body>
+    <!-- Language Toggle -->
+    <div class="lang-switch">
+      <select id="langSelect">
+        <option value="en" selected>English</option>
+        <option value="hi">हिंदी</option>
+      </select>
+    </div>
+
+    <div class="container">
+      <h2 id="title">Junior Judge Simulation</h2>
+
+      <!-- NEW: Class Selection -->
+      <div id="classSelection">
+        <h3>Select Your Class</h3>
+
+        <select id="classSelect">
+          <option value="">-- Choose --</option>
+          <option value="8">8th Standard</option>
+          <option value="9">9th Standard</option>
+          <option value="10">10th Standard</option>
+          <option value="elder">11th / 12th / College</option>
+        </select>
+
+        <br /><br />
+        <button id="startBtn">Start Simulation</button>
+      </div>
+
+      <!-- Simulation Area -->
+      <div id="simulationArea" style="display: none">
+        <div id="caseBox"></div>
+        <div id="options"></div>
+
+        <button id="nextBtn" disabled>Next</button>
+
+        <p id="scoreText">Score: 0</p>
+      </div>
+    </div>
+
+    <!-- Badge Popup -->
+    <div id="badgePopup" class="badge-popup">
+      <div class="badge-content">
+        <h3 id="badgeTitle">Badge Earned!</h3>
+        <p id="badgeMessage">Congratulations! You have earned a new badge.</p>
+        <button id="closeBadge">Close</button>
+      </div>
+    </div>
+
+    <div class="navbar">
+      <a href="home.html" data-i18n="home">Home</a>
+      <a href="roadmap.html" data-i18n="roadmap">Roadmap</a>
+      <a href="assistant.html" data-i18n="assistant">Assistant</a>
+      <a href="judge.html" class="active" data-i18n="simulation">Simulation</a>
+      <a href="leaderboard.html" data-i18n="leaderboard">Leaderboard</a>
+    </div>
+
+    <script type="module" src="judge.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "CAREER_AFTER_12TH": {
+    "text": "After 12th, complete {llb_type} LLB ({duration} years). Then appear for {exam} in {state}. Minimum age: {min_age} years."
+  },
+  "EXAM_REQUIRED": {
+    "text": "In {state}, clear the {exam} after LLB. Stages: Prelims → Mains → Interview."
+  },
+  "ROLE_EXPLANATION": {
+    "text": "A Judge listens to both sides, examines evidence, and delivers a fair and impartial decision."
+  },
+  "AGE_RESPONSE": {
+    "text": "Minimum age for {exam} in {state} is {min_age} years. Upper limit usually 35-40 years."
+  },
+  "LLB_GUIDANCE": {
+    "text": "{state} allows {llb_type} LLB for judiciary. {duration} year course from BCI approved college."
+  },
+  "EXAM_PATTERN": {
+    "text": "{exam} has 3 stages: 1) Prelims (objective), 2) Mains (descriptive), 3) Interview/Viva Voce."
+  },
+  "PREP_TIPS": {
+    "text": "Focus on Constitution, IPC, CrPC, Evidence Act, CPC. Practice answer writing and previous papers."
+  },
+  "GENERAL_PATH": {
+    "text": "1. Complete LLB (3/5 years) → 2. Enroll with State Bar Council → 3. Clear {exam} → 4. Become Civil Judge."
+  }
+}

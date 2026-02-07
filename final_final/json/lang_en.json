@@ -1,0 +1,36 @@
+{
+  "app_title": "Nyaya-Uday",
+  "welcome": "Welcome to Nyaya-Uday",
+
+  "home_subtitle": "Learn Law • Practice Judgement • Compete with Friends",
+
+  "cards": {
+    "roadmap_title": "Judicial Roadmap",
+    "roadmap_desc": "Get personalized roadmap based on education level and state",
+
+    "assistant_title": "Legal Assistant",
+    "assistant_desc": "Ask law related questions instantly",
+
+    "simulation_title": "Judge Simulation",
+    "simulation_desc": "Solve real life cases & earn badges",
+
+    "leaderboard_title": "Leaderboard",
+    "leaderboard_desc": "Compare your score with others"
+  },
+
+  "enter_question": "Enter question",
+  "placeholder_question": "Type your question here",
+  "submit": "Submit",
+  "listening": "Listening...",
+  "score": "Score",
+  "final_score": "Final Score",
+  "judgment_saved": "Your judgment has been recorded",
+
+  "navbar": {
+    "home": "Home",
+    "roadmap": "Roadmap",
+    "assistant": "Assistant",
+    "simulation": "Simulation",
+    "leaderboard": "Leaderboard"
+  }
+}

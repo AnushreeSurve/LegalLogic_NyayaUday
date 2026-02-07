@@ -1,0 +1,297 @@
+{
+  "UP": {
+    "state_name": "उत्तर प्रदेश",
+    "judicial_exam": "UP PCS J",
+    "minimum_age": 22,
+    "education_paths": {
+      "10th": [
+        { "step": "10+2 पूरा करें (किसी भी स्ट्रीम में)", "type": "education" },
+        { "step": "12वीं के बाद 5 वर्षीय LLB में प्रवेश लें", "type": "law_degree" }
+      ],
+      "12th": [
+        { "step": "5 वर्षीय LLB में प्रवेश लें (BCI द्वारा अनुमोदित)", "type": "law_degree" }
+      ],
+      "graduate": [
+        { "step": "3 वर्षीय LLB में प्रवेश लें (BCI द्वारा अनुमोदित)", "type": "law_degree" }
+      ]
+    },
+    "final_steps": [
+      { "step": "UP PCS न्यायिक सेवा परीक्षा की तैयारी करें", "type": "exam" },
+      { "step": "मेन्स और इंटरव्यू पास करें", "type": "selection" },
+      { "step": "सिविल जज (जूनियर डिविजन) के रूप में नियुक्ति", "type": "appointment" }
+    ]
+  },
+
+  "MH": {
+    "state_name": "महाराष्ट्र",
+    "judicial_exam": "महाराष्ट्र न्यायिक सेवा परीक्षा",
+    "minimum_age": 22,
+    "education_paths": {
+      "10th": [
+        { "step": "10+2 पूरा करें (किसी भी स्ट्रीम में)", "type": "education" },
+        { "step": "12वीं के बाद 5 वर्षीय LLB में प्रवेश लें", "type": "law_degree" }
+      ],
+      "12th": [
+        { "step": "5 वर्षीय LLB में प्रवेश लें (BCI द्वारा अनुमोदित)", "type": "law_degree" }
+      ],
+      "graduate": [
+        { "step": "3 वर्षीय LLB में प्रवेश लें (BCI द्वारा अनुमोदित)", "type": "law_degree" }
+      ]
+    },
+    "final_steps": [
+      { "step": "महाराष्ट्र न्यायिक सेवा परीक्षा की तैयारी करें", "type": "exam" },
+      { "step": "लिखित परीक्षा और इंटरव्यू पास करें", "type": "selection" },
+      { "step": "सिविल जज (जूनियर डिविजन) के रूप में नियुक्ति", "type": "appointment" }
+    ]
+  },
+
+  "MP": {
+    "state_name": "मध्य प्रदेश",
+    "judicial_exam": "MP न्यायिक सेवा परीक्षा",
+    "minimum_age": 21,
+    "education_paths": {
+      "10th": [
+        { "step": "10+2 पूरा करें", "type": "education" },
+        { "step": "12वीं के बाद 5 वर्षीय LLB में प्रवेश लें", "type": "law_degree" }
+      ],
+      "12th": [
+        { "step": "5 वर्षीय LLB में प्रवेश लें", "type": "law_degree" }
+      ],
+      "graduate": [
+        { "step": "3 वर्षीय LLB में प्रवेश लें", "type": "law_degree" }
+      ]
+    },
+    "final_steps": [
+      { "step": "MP न्यायिक सेवा परीक्षा में उपस्थित हों", "type": "exam" },
+      { "step": "मेन्स और इंटरव्यू पास करें", "type": "selection" },
+      { "step": "सिविल जज के रूप में नियुक्ति", "type": "appointment" }
+    ]
+  },
+
+  "RJ": {
+    "state_name": "राजस्थान",
+    "judicial_exam": "राजस्थान न्यायिक सेवा परीक्षा",
+    "minimum_age": 21,
+    "education_paths": {
+      "10th": [
+        { "step": "10+2 पूरा करें", "type": "education" },
+        { "step": "5 वर्षीय LLB में प्रवेश लें", "type": "law_degree" }
+      ],
+      "12th": [
+        { "step": "5 वर्षीय LLB में प्रवेश लें", "type": "law_degree" }
+      ],
+      "graduate": [
+        { "step": "3 वर्षीय LLB में प्रवेश लें", "type": "law_degree" }
+      ]
+    },
+    "final_steps": [
+      { "step": "राजस्थान न्यायिक सेवा परीक्षा की तैयारी करें", "type": "exam" },
+      { "step": "लिखित परीक्षा और इंटरव्यू पास करें", "type": "selection" },
+      { "step": "सिविल जज के रूप में नियुक्ति", "type": "appointment" }
+    ]
+  },
+
+  "BR": {
+    "state_name": "बिहार",
+    "judicial_exam": "बिहार न्यायिक सेवा परीक्षा",
+    "minimum_age": 22,
+    "education_paths": {
+      "10th": [
+        { "step": "10+2 पूरा करें", "type": "education" },
+        { "step": "5 वर्षीय LLB में प्रवेश लें", "type": "law_degree" }
+      ],
+      "12th": [
+        { "step": "5 वर्षीय LLB में प्रवेश लें", "type": "law_degree" }
+      ],
+      "graduate": [
+        { "step": "3 वर्षीय LLB में प्रवेश लें", "type": "law_degree" }
+      ]
+    },
+    "final_steps": [
+      { "step": "बिहार न्यायिक सेवा परीक्षा की तैयारी करें", "type": "exam" },
+      { "step": "लिखित परीक्षा और इंटरव्यू पास करें", "type": "selection" },
+      { "step": "सिविल जज के रूप में नियुक्ति", "type": "appointment" }
+    ]
+  },
+
+  "DL": {
+    "state_name": "दिल्ली",
+    "judicial_exam": "Delhi Judicial Service Exam",
+    "minimum_age": 21,
+    "education_paths": {
+      "10th": [
+        {"step": "10+2 पूरा करें (किसी भी स्ट्रीम में)", "type": "education"},
+        {"step": "12वीं के बाद 5 वर्षीय LLB में प्रवेश लें", "type": "law_degree"}
+      ],
+      "12th": [{"step": "5 वर्षीय LLB में प्रवेश लें (BCI द्वारा अनुमोदित)", "type": "law_degree"}],
+      "graduate": [{"step": "3 वर्षीय LLB में प्रवेश लें (BCI द्वारा अनुमोदित)", "type": "law_degree"}]
+    },
+    "final_steps": [
+      {"step": "Delhi Judicial Service Examination की तैयारी करें", "type": "exam"},
+      {"step": "प्रीलिम्स, मेन्स और इंटरव्यू पास करें", "type": "selection"},
+      {"step": "सिविल जज (जूनियर डिविजन) के रूप में नियुक्ति", "type": "appointment"}
+    ]
+  },
+  "GJ": {
+    "state_name": "गुजरात",
+    "judicial_exam": "Gujarat Judicial Service Exam",
+    "minimum_age": 21,
+    "education_paths": {
+      "10th": [
+        {"step": "10+2 पूरा करें (किसी भी स्ट्रीम में)", "type": "education"},
+        {"step": "12वीं के बाद 5 वर्षीय LLB में प्रवेश लें", "type": "law_degree"}
+      ],
+      "12th": [{"step": "5 वर्षीय LLB में प्रवेश लें (BCI द्वारा अनुमोदित)", "type": "law_degree"}],
+      "graduate": [{"step": "3 वर्षीय LLB में प्रवेश लें (BCI द्वारा अनुमोदित)", "type": "law_degree"}]
+    },
+    "final_steps": [
+      {"step": "Gujarat Judicial Service Examination की तैयारी करें", "type": "exam"},
+      {"step": "प्रीलिम्स, मेन्स और इंटरव्यू पास करें", "type": "selection"},
+      {"step": "सिविल जज के रूप में नियुक्ति", "type": "appointment"}
+    ]
+  },
+  "KA": {
+    "state_name": "कर्नाटक",
+    "judicial_exam": "Karnataka Judicial Service Exam",
+    "minimum_age": 21,
+    "education_paths": {
+      "10th": [
+        {"step": "10+2 पूरा करें (किसी भी स्ट्रीम में)", "type": "education"},
+        {"step": "12वीं के बाद 5 वर्षीय LLB में प्रवेश लें", "type": "law_degree"}
+      ],
+      "12th": [{"step": "5 वर्षीय LLB में प्रवेश लें (BCI द्वारा अनुमोदित)", "type": "law_degree"}],
+      "graduate": [{"step": "3 वर्षीय LLB में प्रवेश लें (BCI द्वारा अनुमोदित)", "type": "law_degree"}]
+    },
+    "final_steps": [
+      {"step": "Karnataka Judicial Service Examination की तैयारी करें", "type": "exam"},
+      {"step": "मेन्स और वाइवा वॉइस पास करें", "type": "selection"},
+      {"step": "सिविल जज के रूप में नियुक्ति", "type": "appointment"}
+    ]
+  },
+  "TN": {
+    "state_name": "तमिलनाडु",
+    "judicial_exam": "Tamil Nadu Judicial Service Exam",
+    "minimum_age": 21,
+    "education_paths": {
+      "10th": [
+        {"step": "10+2 पूरा करें (किसी भी स्ट्रीम में)", "type": "education"},
+        {"step": "12वीं के बाद 5 वर्षीय LLB में प्रवेश लें", "type": "law_degree"}
+      ],
+      "12th": [{"step": "5 वर्षीय LLB में प्रवेश लें (BCI द्वारा अनुमोदित)", "type": "law_degree"}],
+      "graduate": [{"step": "3 वर्षीय LLB में प्रवेश लें (BCI द्वारा अनुमोदित)", "type": "law_degree"}]
+    },
+    "final_steps": [
+      {"step": "Tamil Nadu Judicial Service Examination की तैयारी करें", "type": "exam"},
+      {"step": "लिखित परीक्षा और वाइवा वॉइस पास करें", "type": "selection"},
+      {"step": "सिविल जज के रूप में नियुक्ति", "type": "appointment"}
+    ]
+  },
+  "KL": {
+    "state_name": "केरल",
+    "judicial_exam": "Kerala Judicial Service Exam",
+    "minimum_age": 21,
+    "education_paths": {
+      "10th": [
+        {"step": "10+2 पूरा करें (किसी भी स्ट्रीम में)", "type": "education"},
+        {"step": "12वीं के बाद 5 वर्षीय LLB में प्रवेश लें", "type": "law_degree"}
+      ],
+      "12th": [{"step": "5 वर्षीय LLB में प्रवेश लें (BCI द्वारा अनुमोदित)", "type": "law_degree"}],
+      "graduate": [{"step": "3 वर्षीय LLB में प्रवेश लें (BCI द्वारा अनुमोदित)", "type": "law_degree"}]
+    },
+    "final_steps": [
+      {"step": "Kerala Judicial Service Examination की तैयारी करें", "type": "exam"},
+      {"step": "मेन्स और इंटरव्यू पास करें", "type": "selection"},
+      {"step": "मुनसिफ के रूप में नियुक्ति", "type": "appointment"}
+    ]
+  },
+  "AP": {
+    "state_name": "आंध्र प्रदेश",
+    "judicial_exam": "AP Judicial Service Exam",
+    "minimum_age": 21,
+    "education_paths": {
+      "10th": [
+        {"step": "10+2 पूरा करें (किसी भी स्ट्रीम में)", "type": "education"},
+        {"step": "12वीं के बाद 5 वर्षीय LLB में प्रवेश लें", "type": "law_degree"}
+      ],
+      "12th": [{"step": "5 वर्षीय LLB में प्रवेश लें (BCI द्वारा अनुमोदित)", "type": "law_degree"}],
+      "graduate": [{"step": "3 वर्षीय LLB में प्रवेश लें (BCI द्वारा अनुमोदित)", "type": "law_degree"}]
+    },
+    "final_steps": [
+      {"step": "AP Judicial Service Examination की तैयारी करें", "type": "exam"},
+      {"step": "स्क्रीनिंग, मेन्स और इंटरव्यू पास करें", "type": "selection"},
+      {"step": "सिविल जज के रूप में नियुक्ति", "type": "appointment"}
+    ]
+  },
+  "TS": {
+    "state_name": "तेलंगाना",
+    "judicial_exam": "Telangana Judicial Service Exam",
+    "minimum_age": 21,
+    "education_paths": {
+      "10th": [
+        {"step": "10+2 पूरा करें (किसी भी स्ट्रीम में)", "type": "education"},
+        {"step": "12वीं के बाद 5 वर्षीय LLB में प्रवेश लें", "type": "law_degree"}
+      ],
+      "12th": [{"step": "5 वर्षीय LLB में प्रवेश लें (BCI द्वारा अनुमोदित)", "type": "law_degree"}],
+      "graduate": [{"step": "3 वर्षीय LLB में प्रवेश लें (BCI द्वारा अनुमोदित)", "type": "law_degree"}]
+    },
+    "final_steps": [
+      {"step": "Telangana Judicial Service Examination की तैयारी करें", "type": "exam"},
+      {"step": "प्रीलिम्स, मेन्स और इंटरव्यू पास करें", "type": "selection"},
+      {"step": "सिविल जज के रूप में नियुक्ति", "type": "appointment"}
+    ]
+  },
+  "WB": {
+    "state_name": "पश्चिम बंगाल",
+    "judicial_exam": "West Bengal Judicial Service Exam",
+    "minimum_age": 22,
+    "education_paths": {
+      "10th": [
+        {"step": "10+2 पूरा करें (किसी भी स्ट्रीम में)", "type": "education"},
+        {"step": "12वीं के बाद 5 वर्षीय LLB में प्रवेश लें", "type": "law_degree"}
+      ],
+      "12th": [{"step": "5 वर्षीय LLB में प्रवेश लें (BCI द्वारा अनुमोदित)", "type": "law_degree"}],
+      "graduate": [{"step": "3 वर्षीय LLB में प्रवेश लें (BCI द्वारा अनुमोदित)", "type": "law_degree"}]
+    },
+    "final_steps": [
+      {"step": "West Bengal Judicial Service Examination की तैयारी करें", "type": "exam"},
+      {"step": "प्रीलिम्स, मेन्स और वाइवा वॉइस पास करें", "type": "selection"},
+      {"step": "ज्यूडिशियल मजिस्ट्रेट के रूप में नियुक्ति", "type": "appointment"}
+    ]
+  },
+  "OD": {
+    "state_name": "ओडिशा",
+    "judicial_exam": "Odisha Judicial Service Exam",
+    "minimum_age": 21,
+    "education_paths": {
+      "10th": [
+        {"step": "10+2 पूरा करें (किसी भी स्ट्रीम में)", "type": "education"},
+        {"step": "12वीं के बाद 5 वर्षीय LLB में प्रवेश लें", "type": "law_degree"}
+      ],
+      "12th": [{"step": "5 वर्षीय LLB में प्रवेश लें (BCI द्वारा अनुमोदित)", "type": "law_degree"}],
+      "graduate": [{"step": "3 वर्षीय LLB में प्रवेश लें (BCI द्वारा अनुमोदित)", "type": "law_degree"}]
+    },
+    "final_steps": [
+      {"step": "Odisha Judicial Service Examination की तैयारी करें", "type": "exam"},
+      {"step": "प्रीलिम्स, मेन्स और वाइवा वॉइस पास करें", "type": "selection"},
+      {"step": "सिविल जज के रूप में नियुक्ति", "type": "appointment"}
+    ]
+  },
+  "PB": {
+    "state_name": "पंजाब",
+    "judicial_exam": "Punjab Judicial Service Exam",
+    "minimum_age": 21,
+    "education_paths": {
+      "10th": [
+        {"step": "10+2 पूरा करें (किसी भी स्ट्रीम में)", "type": "education"},
+        {"step": "12वीं के बाद 5 वर्षीय LLB में प्रवेश लें", "type": "law_degree"}
+      ],
+      "12th": [{"step": "5 वर्षीय LLB में प्रवेश लें (BCI द्वारा अनुमोदित)", "type": "law_degree"}],
+      "graduate": [{"step": "3 वर्षीय LLB में प्रवेश लें (BCI द्वारा अनुमोदित)", "type": "law_degree"}]
+    },
+    "final_steps": [
+      {"step": "Punjab Judicial Service Examination की तैयारी करें", "type": "exam"},
+      {"step": "प्रीलिम्स, मेन्स और वाइवा वॉइस पास करें", "type": "selection"},
+      {"step": "सिविल जज (जूनियर डिविजन) के रूप में नियुक्ति", "type": "appointment"}
+    ]
+  }
+}

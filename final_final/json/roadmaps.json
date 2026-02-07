@@ -1,0 +1,403 @@
+{
+  "UP": {
+    "state_name": "Uttar Pradesh",
+    "judicial_exam": "UP PCS J",
+    "minimum_age": 22,
+    "education_paths": {
+      "10th": [
+        {
+          "step": "Complete 10+2 (any stream)",
+          "type": "education"
+        },
+        {
+          "step": "Enroll in 5-year LLB after 12th",
+          "type": "law_degree"
+        }
+      ],
+      "12th": [
+        {
+          "step": "Enroll in 5-year LLB (approved by BCI)",
+          "type": "law_degree"
+        }
+      ],
+      "graduate": [
+        {
+          "step": "Enroll in 3-year LLB (approved by BCI)",
+          "type": "law_degree"
+        }
+      ]
+    },
+    "final_steps": [
+      {
+        "step": "Prepare for UP PCS Judicial Services Examination",
+        "type": "exam"
+      },
+      {
+        "step": "Clear mains and interview",
+        "type": "selection"
+      },
+      {
+        "step": "Appointment as Civil Judge (Junior Division)",
+        "type": "appointment"
+      }
+    ]
+  },
+
+  "MH": {
+    "state_name": "Maharashtra",
+    "judicial_exam": "Maharashtra Judicial Services Exam",
+    "minimum_age": 22,
+    "education_paths": {
+      "10th": [
+        {
+          "step": "Complete 10+2 (any stream)",
+          "type": "education"
+        },
+        {
+          "step": "Enroll in 5-year LLB after 12th",
+          "type": "law_degree"
+        }
+      ],
+      "12th": [
+        {
+          "step": "Enroll in 5-year LLB (approved by BCI)",
+          "type": "law_degree"
+        }
+      ],
+      "graduate": [
+        {
+          "step": "Enroll in 3-year LLB (approved by BCI)",
+          "type": "law_degree"
+        }
+      ]
+    },
+    "final_steps": [
+      {
+        "step": "Prepare for Maharashtra Judicial Services Examination",
+        "type": "exam"
+      },
+      {
+        "step": "Clear written exams and viva voce",
+        "type": "selection"
+      },
+      {
+        "step": "Appointment as Civil Judge (Junior Division)",
+        "type": "appointment"
+      }
+    ]
+  },
+
+  "MP": {
+    "state_name": "Madhya Pradesh",
+    "judicial_exam": "MP Judicial Services Exam",
+    "minimum_age": 21,
+    "education_paths": {
+      "10th": [
+        {
+          "step": "Complete 10+2",
+          "type": "education"
+        },
+        {
+          "step": "Enroll in 5-year LLB after 12th",
+          "type": "law_degree"
+        }
+      ],
+      "12th": [
+        {
+          "step": "Enroll in 5-year LLB",
+          "type": "law_degree"
+        }
+      ],
+      "graduate": [
+        {
+          "step": "Enroll in 3-year LLB",
+          "type": "law_degree"
+        }
+      ]
+    },
+    "final_steps": [
+      {
+        "step": "Appear for MP Judicial Services Examination",
+        "type": "exam"
+      },
+      {
+        "step": "Clear mains and interview",
+        "type": "selection"
+      },
+      {
+        "step": "Appointment as Civil Judge",
+        "type": "appointment"
+      }
+    ]
+  },
+
+  "RJ": {
+    "state_name": "Rajasthan",
+    "judicial_exam": "Rajasthan Judicial Services Exam",
+    "minimum_age": 21,
+    "education_paths": {
+      "10th": [
+        {
+          "step": "Complete 10+2",
+          "type": "education"
+        },
+        {
+          "step": "Enroll in 5-year LLB",
+          "type": "law_degree"
+        }
+      ],
+      "12th": [
+        {
+          "step": "Enroll in 5-year LLB",
+          "type": "law_degree"
+        }
+      ],
+      "graduate": [
+        {
+          "step": "Enroll in 3-year LLB",
+          "type": "law_degree"
+        }
+      ]
+    },
+    "final_steps": [
+      {
+        "step": "Prepare for Rajasthan Judicial Services Exam",
+        "type": "exam"
+      },
+      {
+        "step": "Clear written exams and interview",
+        "type": "selection"
+      },
+      {
+        "step": "Appointment as Civil Judge",
+        "type": "appointment"
+      }
+    ]
+  },
+
+  "BR": {
+    "state_name": "Bihar",
+    "judicial_exam": "Bihar Judicial Services Exam",
+    "minimum_age": 22,
+    "education_paths": {
+      "10th": [
+        {
+          "step": "Complete 10+2",
+          "type": "education"
+        },
+        {
+          "step": "Enroll in 5-year LLB",
+          "type": "law_degree"
+        }
+      ],
+      "12th": [
+        {
+          "step": "Enroll in 5-year LLB",
+          "type": "law_degree"
+        }
+      ],
+      "graduate": [
+        {
+          "step": "Enroll in 3-year LLB",
+          "type": "law_degree"
+        }
+      ]
+    },
+    "final_steps": [
+      {
+        "step": "Prepare for Bihar Judicial Services Examination",
+        "type": "exam"
+      },
+      {
+        "step": "Clear written exams and interview",
+        "type": "selection"
+      },
+      {
+        "step": "Appointment as Civil Judge",
+        "type": "appointment"
+      }
+    ]
+  },
+
+  "DL": {
+    "state_name": "Delhi",
+    "judicial_exam": "Delhi Judicial Service Exam",
+    "minimum_age": 21,
+    "education_paths": {
+      "10th": [
+        {"step": "Complete 10+2 (any stream)", "type": "education"},
+        {"step": "Enroll in 5-year LLB after 12th", "type": "law_degree"}
+      ],
+      "12th": [{"step": "Enroll in 5-year LLB (approved by BCI)", "type": "law_degree"}],
+      "graduate": [{"step": "Enroll in 3-year LLB (approved by BCI)", "type": "law_degree"}]
+    },
+    "final_steps": [
+      {"step": "Prepare for Delhi Judicial Service Examination", "type": "exam"},
+      {"step": "Clear prelims, mains and interview", "type": "selection"},
+      {"step": "Appointment as Civil Judge (Junior Division)", "type": "appointment"}
+    ]
+  },
+  "GJ": {
+    "state_name": "Gujarat",
+    "judicial_exam": "Gujarat Judicial Service Exam",
+    "minimum_age": 21,
+    "education_paths": {
+      "10th": [
+        {"step": "Complete 10+2 (any stream)", "type": "education"},
+        {"step": "Enroll in 5-year LLB after 12th", "type": "law_degree"}
+      ],
+      "12th": [{"step": "Enroll in 5-year LLB (approved by BCI)", "type": "law_degree"}],
+      "graduate": [{"step": "Enroll in 3-year LLB (approved by BCI)", "type": "law_degree"}]
+    },
+    "final_steps": [
+      {"step": "Prepare for Gujarat Judicial Service Examination", "type": "exam"},
+      {"step": "Clear prelims, mains and interview", "type": "selection"},
+      {"step": "Appointment as Civil Judge", "type": "appointment"}
+    ]
+  },
+  "KA": {
+    "state_name": "Karnataka",
+    "judicial_exam": "Karnataka Judicial Service Exam",
+    "minimum_age": 21,
+    "education_paths": {
+      "10th": [
+        {"step": "Complete 10+2 (any stream)", "type": "education"},
+        {"step": "Enroll in 5-year LLB after 12th", "type": "law_degree"}
+      ],
+      "12th": [{"step": "Enroll in 5-year LLB (approved by BCI)", "type": "law_degree"}],
+      "graduate": [{"step": "Enroll in 3-year LLB (approved by BCI)", "type": "law_degree"}]
+    },
+    "final_steps": [
+      {"step": "Prepare for Karnataka Judicial Service Examination", "type": "exam"},
+      {"step": "Clear mains and viva voce", "type": "selection"},
+      {"step": "Appointment as Civil Judge", "type": "appointment"}
+    ]
+  },
+  "TN": {
+    "state_name": "Tamil Nadu",
+    "judicial_exam": "Tamil Nadu Judicial Service Exam",
+    "minimum_age": 21,
+    "education_paths": {
+      "10th": [
+        {"step": "Complete 10+2 (any stream)", "type": "education"},
+        {"step": "Enroll in 5-year LLB after 12th", "type": "law_degree"}
+      ],
+      "12th": [{"step": "Enroll in 5-year LLB (approved by BCI)", "type": "law_degree"}],
+      "graduate": [{"step": "Enroll in 3-year LLB (approved by BCI)", "type": "law_degree"}]
+    },
+    "final_steps": [
+      {"step": "Prepare for Tamil Nadu Judicial Service Examination", "type": "exam"},
+      {"step": "Clear written exam and viva voce", "type": "selection"},
+      {"step": "Appointment as Civil Judge", "type": "appointment"}
+    ]
+  },
+  "KL": {
+    "state_name": "Kerala",
+    "judicial_exam": "Kerala Judicial Service Exam",
+    "minimum_age": 21,
+    "education_paths": {
+      "10th": [
+        {"step": "Complete 10+2 (any stream)", "type": "education"},
+        {"step": "Enroll in 5-year LLB after 12th", "type": "law_degree"}
+      ],
+      "12th": [{"step": "Enroll in 5-year LLB (approved by BCI)", "type": "law_degree"}],
+      "graduate": [{"step": "Enroll in 3-year LLB (approved by BCI)", "type": "law_degree"}]
+    },
+    "final_steps": [
+      {"step": "Prepare for Kerala Judicial Service Examination", "type": "exam"},
+      {"step": "Clear mains and interview", "type": "selection"},
+      {"step": "Appointment as Munsiff", "type": "appointment"}
+    ]
+  },
+  "AP": {
+    "state_name": "Andhra Pradesh",
+    "judicial_exam": "AP Judicial Service Exam",
+    "minimum_age": 21,
+    "education_paths": {
+      "10th": [
+        {"step": "Complete 10+2 (any stream)", "type": "education"},
+        {"step": "Enroll in 5-year LLB after 12th", "type": "law_degree"}
+      ],
+      "12th": [{"step": "Enroll in 5-year LLB (approved by BCI)", "type": "law_degree"}],
+      "graduate": [{"step": "Enroll in 3-year LLB (approved by BCI)", "type": "law_degree"}]
+    },
+    "final_steps": [
+      {"step": "Prepare for AP Judicial Service Examination", "type": "exam"},
+      {"step": "Clear screening, mains and interview", "type": "selection"},
+      {"step": "Appointment as Civil Judge", "type": "appointment"}
+    ]
+  },
+  "TS": {
+    "state_name": "Telangana",
+    "judicial_exam": "Telangana Judicial Service Exam",
+    "minimum_age": 21,
+    "education_paths": {
+      "10th": [
+        {"step": "Complete 10+2 (any stream)", "type": "education"},
+        {"step": "Enroll in 5-year LLB after 12th", "type": "law_degree"}
+      ],
+      "12th": [{"step": "Enroll in 5-year LLB (approved by BCI)", "type": "law_degree"}],
+      "graduate": [{"step": "Enroll in 3-year LLB (approved by BCI)", "type": "law_degree"}]
+    },
+    "final_steps": [
+      {"step": "Prepare for Telangana Judicial Service Examination", "type": "exam"},
+      {"step": "Clear prelims, mains and interview", "type": "selection"},
+      {"step": "Appointment as Civil Judge", "type": "appointment"}
+    ]
+  },
+  "WB": {
+    "state_name": "West Bengal",
+    "judicial_exam": "West Bengal Judicial Service Exam",
+    "minimum_age": 22,
+    "education_paths": {
+      "10th": [
+        {"step": "Complete 10+2 (any stream)", "type": "education"},
+        {"step": "Enroll in 5-year LLB after 12th", "type": "law_degree"}
+      ],
+      "12th": [{"step": "Enroll in 5-year LLB (approved by BCI)", "type": "law_degree"}],
+      "graduate": [{"step": "Enroll in 3-year LLB (approved by BCI)", "type": "law_degree"}]
+    },
+    "final_steps": [
+      {"step": "Prepare for West Bengal Judicial Service Examination", "type": "exam"},
+      {"step": "Clear prelims, mains and viva voce", "type": "selection"},
+      {"step": "Appointment as Judicial Magistrate", "type": "appointment"}
+    ]
+  },
+  "OD": {
+    "state_name": "Odisha",
+    "judicial_exam": "Odisha Judicial Service Exam",
+    "minimum_age": 21,
+    "education_paths": {
+      "10th": [
+        {"step": "Complete 10+2 (any stream)", "type": "education"},
+        {"step": "Enroll in 5-year LLB after 12th", "type": "law_degree"}
+      ],
+      "12th": [{"step": "Enroll in 5-year LLB (approved by BCI)", "type": "law_degree"}],
+      "graduate": [{"step": "Enroll in 3-year LLB (approved by BCI)", "type": "law_degree"}]
+    },
+    "final_steps": [
+      {"step": "Prepare for Odisha Judicial Service Examination", "type": "exam"},
+      {"step": "Clear prelims, mains and viva voce", "type": "selection"},
+      {"step": "Appointment as Civil Judge", "type": "appointment"}
+    ]
+  },
+  "PB": {
+    "state_name": "Punjab",
+    "judicial_exam": "Punjab Judicial Service Exam",
+    "minimum_age": 21,
+    "education_paths": {
+      "10th": [
+        {"step": "Complete 10+2 (any stream)", "type": "education"},
+        {"step": "Enroll in 5-year LLB after 12th", "type": "law_degree"}
+      ],
+      "12th": [{"step": "Enroll in 5-year LLB (approved by BCI)", "type": "law_degree"}],
+      "graduate": [{"step": "Enroll in 3-year LLB (approved by BCI)", "type": "law_degree"}]
+    },
+    "final_steps": [
+      {"step": "Prepare for Punjab Judicial Service Examination", "type": "exam"},
+      {"step": "Clear prelims, mains and viva voce", "type": "selection"},
+      {"step": "Appointment as Civil Judge (Junior Division)", "type": "appointment"}
+    ]
+  }
+
+}

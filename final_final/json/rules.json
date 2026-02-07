@@ -1,0 +1,92 @@
+{
+  "Uttar Pradesh": {
+    "llb_allowed": ["5_year", "3_year"],
+    "judicial_exam": "UP PCS-J",
+    "min_education": "LLB",
+    "min_age": 22
+  },
+  "Madhya Pradesh": {
+    "llb_allowed": ["5_year", "3_year"],
+    "judicial_exam": "MP Judicial Services",
+    "min_education": "LLB",
+    "min_age": 21
+  },
+  "Bihar": {
+    "llb_allowed": ["5_year", "3_year"],
+    "judicial_exam": "Bihar Judicial Services",
+    "min_education": "LLB",
+    "min_age": 22
+  },
+  "Maharashtra": {
+    "llb_allowed": ["5_year", "3_year"],
+    "judicial_exam": "Maharashtra Judicial Services",
+    "min_education": "LLB",
+    "min_age": 21
+  },
+  "Rajasthan": {
+    "llb_allowed": ["5_year", "3_year"],
+    "judicial_exam": "Rajasthan Judicial Services",
+    "min_education": "LLB",
+    "min_age": 21
+  },
+  "Delhi": {
+    "llb_allowed": ["5_year", "3_year"],
+    "judicial_exam": "Delhi Judicial Service",
+    "min_education": "LLB",
+    "min_age": 21
+  },
+  "Gujarat": {
+    "llb_allowed": ["5_year", "3_year"],
+    "judicial_exam": "Gujarat Judicial Services",
+    "min_education": "LLB",
+    "min_age": 21
+  },
+  "Karnataka": {
+    "llb_allowed": ["5_year", "3_year"],
+    "judicial_exam": "Karnataka Judicial Services",
+    "min_education": "LLB",
+    "min_age": 21
+  },
+  "Tamil Nadu": {
+    "llb_allowed": ["5_year", "3_year"],
+    "judicial_exam": "Tamil Nadu Judicial Services",
+    "min_education": "LLB",
+    "min_age": 21
+  },
+  "Kerala": {
+    "llb_allowed": ["5_year", "3_year"],
+    "judicial_exam": "Kerala Judicial Services",
+    "min_education": "LLB",
+    "min_age": 21
+  },
+  "Andhra Pradesh": {
+    "llb_allowed": ["5_year", "3_year"],
+    "judicial_exam": "AP Judicial Services",
+    "min_education": "LLB",
+    "min_age": 21
+  },
+  "Telangana": {
+    "llb_allowed": ["5_year", "3_year"],
+    "judicial_exam": "Telangana Judicial Services",
+    "min_education": "LLB",
+    "min_age": 21
+  },
+  "West Bengal": {
+    "llb_allowed": ["5_year", "3_year"],
+    "judicial_exam": "West Bengal Judicial Services",
+    "min_education": "LLB",
+    "min_age": 22
+  },
+  "Odisha": {
+    "llb_allowed": ["5_year", "3_year"],
+    "judicial_exam": "Odisha Judicial Services",
+    "min_education": "LLB",
+    "min_age": 21
+  },
+  "Punjab": {
+    "llb_allowed": ["5_year", "3_year"],
+    "judicial_exam": "Punjab Judicial Services",
+    "min_education": "LLB",
+    "min_age": 21
+  }
+}

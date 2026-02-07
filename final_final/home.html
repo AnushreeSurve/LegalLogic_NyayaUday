@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#0f172a" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="home.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <div class="lang-switch">
+      <button id="langToggle">हिंदी</button>
+    </div>
+
+    <h2 id="welcome-header">Welcome to Nyaya-Uday</h2>
+    <p class="subtitle">
+      Learn Law • Practice Judgement • Compete with Friends
+    </p>
+
+    <div class="cards">
+      <div class="card" onclick="location.href = 'roadmap.html'">
+        <h3>Judicial Roadmap</h3>
+        <p>Get personalized roadmap based on education level and state</p>
+      </div>
+
+      <div class="card" onclick="location.href = 'assistant.html'">
+        <h3>Legal Assistant</h3>
+        <p>Ask law related questions instantly</p>
+      </div>
+
+      <div class="card" onclick="location.href = 'judge.html'">
+        <h3>Judge Simulation</h3>
+        <p>Solve real life cases & earn badges</p>
+      </div>
+
+      <div class="card" onclick="location.href = 'leaderboard.html'">
+        <h3>Leaderboard</h3>
+        <p>Compare your score with others</p>
+      </div>
+    </div>
+
+    <script src="home.js" defer></script>
+  </body>
+</html>

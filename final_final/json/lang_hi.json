@@ -1,0 +1,37 @@
+{
+  "app_title": "लीगल लॉजिक",
+  "welcome": "लीगल लॉजिक में आपका स्वागत है",
+
+  "home_subtitle": "कानून सीखें • निर्णय अभ्यास करें • दोस्तों से मुकाबला करें",
+
+  "cards": {
+    "roadmap_title": "न्यायिक रोडमैप",
+    "roadmap_desc": "शिक्षा स्तर और राज्य के अनुसार व्यक्तिगत रोडमैप प्राप्त करें",
+
+    "assistant_title": "कानूनी सहायक",
+    "assistant_desc": "तुरंत कानून से जुड़े प्रश्न पूछें",
+
+    "simulation_title": "जज सिमुलेशन",
+    "simulation_desc": "वास्तविक मामलों को हल करें और बैज कमाएं",
+
+    "leaderboard_title": "लीडरबोर्ड",
+    "leaderboard_desc": "अपने स्कोर की दूसरों से तुलना करें"
+  },
+
+  "enter_question": "प्रश्न दर्ज करें",
+  "placeholder_question": "अपना प्रश्न लिखें",
+  "submit": "जमा करें",
+  "listening": "सुन रहा है...",
+
+  "score": "अंक",
+  "final_score": "अंतिम अंक",
+  "judgment_saved": "आपका निर्णय सहेज लिया गया है",
+
+  "navbar": {
+    "home": "होम",
+    "roadmap": "रोडमैप",
+    "assistant": "सहायक",
+    "simulation": "सिमुलेशन",
+    "leaderboard": "लीडरबोर्ड"
+  }
+}

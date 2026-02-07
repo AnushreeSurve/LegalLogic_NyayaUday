@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="roadmap.css" />
+    <title>Judicial Roadmap</title>
+  </head>
+  <body>
+    <!-- Language Switch -->
+    <div class="lang-switch">
+      <button id="langToggle">हिंदी</button>
+    </div>
+
+    <!-- Header -->
+    <div class="welcome-wrap">
+      <h2 id="welcome-header">Welcome to Nyaya-Uday</h2>
+      <p class="welcome-sub">Your guided judicial career roadmap</p>
+    </div>
+
+    <div id="roadmap-div" class="roadmap-div">
+      <!-- Controls -->
+      <section class="controls">
+        <select id="stateSelect">
+          <option value="">Select State</option>
+          <option value="UP">Uttar Pradesh</option>
+          <option value="MH">Maharashtra</option>
+          <option value="RJ">Rajasthan</option>
+          <option value="MP">Madhya Pradesh</option>
+          <option value="BR">Bihar</option>
+          <option value="DL">Delhi</option>
+          <option value="GJ">Gujarat</option>
+          <option value="KA">Karnataka</option>
+          <option value="TN">Tamil Nadu</option>
+          <option value="KL">Kerala</option>
+          <option value="AP">Andhra Pradesh</option>
+          <option value="TS">Telangana</option>
+          <option value="WB">West Bengal</option>
+          <option value="OD">Odisha</option>
+          <option value="PB">Punjab</option>
+        </select>
+
+        <select id="educationSelect">
+          <option value="">Select Education Level</option>
+          <option value="10th">10th</option>
+          <option value="12th">12th</option>
+          <option value="graduate">Graduate</option>
+        </select>
+
+        <button id="loadBtn">Create Roadmap</button>
+      </section>
+
+      <!-- Roadmap Output -->
+      <section id="roadmap" class="roadmap"></section>
+
+      <!-- Bottom Navigation -->
+      <div class="navbar">
+        <a href="home.html" data-i18n="home">Home</a>
+        <a href="roadmap.html" class="active" data-i18n="roadmap">Roadmap</a>
+        <a href="assistant.html" data-i18n="assistant">Assistant</a>
+        <a href="judge.html" data-i18n="simulation">Simulation</a>
+        <a href="leaderboard.html" data-i18n="leaderboard">Leaderboard</a>
+      </div>
+    </div>
+
+    <script src="roadmap.js" defer></script>
+  </body>
+</html>
