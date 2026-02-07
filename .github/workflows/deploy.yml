@@ -13,12 +13,9 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
+      steps:
       - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Create config.js from Secret
-        run: |
-          echo "${{ secrets.FIREBASE_CONFIG }}" > config.js
 
       - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v3
