@@ -1,9 +1,56 @@
 /*********************************
+ * FIREBASE + INDEXED DB SETUP
+ *********************************/
+import { firebaseDB } from "./firebase.js";
+import {
+  doc,
+  getDoc,
+  setDoc,
+  serverTimestamp
+} from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+
+let db;
+const request = indexedDB.open("UserDB", 4);
+
+request.onupgradeneeded = e => {
+  db = e.target.result;
+  if (!db.objectStoreNames.contains("users")) {
+    db.createObjectStore("users", { keyPath: "email" });
+  }
+  if (!db.objectStoreNames.contains("judgeScores")) {
+    db.createObjectStore("judgeScores", {
+      keyPath: "id",
+      autoIncrement: true
+    });
+  }
+};
+
+request.onsuccess = e => {
+  db = e.target.result;
+  syncScoresToFirebase();
+};
+
+/*********************************
+ * SIMULATION STATE & VARIABLES
+ *********************************/
+let earnedBadges = [];
+let current = 0;
+let totalScore = 0;
+let selected = false;
+let gameOver = false;
+let selectedClass = null;
+let lang = localStorage.getItem("lang") || "en";
+let labels = {};
+
+const userEmail = localStorage.getItem("loggedInEmail");
+if (!userEmail) {
+  alert("Please login first");
+  window.location.href = "login.html";
+}
+
+/*********************************
  * CLASS-BASED QUESTION BANK
  *********************************/
-
-let selectedClass = null;
-
 const questionBank = {
   en: {
     "8_9": [
@@ -32,7 +79,6 @@ const questionBank = {
         ]
       }
     ],
-
     "10": [
       {
         text: "A rich and poor person commit the same mistake. Your decision?",
@@ -59,7 +105,6 @@ const questionBank = {
         ]
       }
     ],
-
     "elder": [
       {
         text: "No proof but strong suspicion. What will you do?",
@@ -86,56 +131,51 @@ const questionBank = {
         ]
       }
     ]
+  },
+  hi: {
+    // Add Hindi translations here following the same structure as 'en'
   }
 };
 
-
 /*********************************
- * EXISTING VARIABLES
+ * UI ELEMENTS
  *********************************/
-
-let earnedBadges = [];
-let current = 0;
-let totalScore = 0;
-let selected = false;
-let gameOver = false;
-let lang = localStorage.getItem("lang") || "en";
-let labels = {};
-
-/*********************************
- * CLASS SELECTION START
- *********************************/
-
 const startBtn = document.getElementById("startBtn");
 const classSelect = document.getElementById("classSelect");
 const simulationArea = document.getElementById("simulationArea");
 const classSelection = document.getElementById("classSelection");
-
-startBtn.onclick = () => {
-  if (!classSelect.value) {
-    alert("Please select class");
-    return;
-  }
-
-  if (classSelect.value === "8" || classSelect.value === "9") {
-    selectedClass = "8_9";
-  } else if (classSelect.value === "10") {
-    selectedClass = "10";
-  } else {
-    selectedClass = "elder";
-  }
-
-  classSelection.style.display = "none";
-  simulationArea.style.display = "block";
-
-  resetSimulation();
-};
-
+const caseBox = document.getElementById("caseBox");
+const optionsBox = document.getElementById("options");
+const scoreText = document.getElementById("scoreText");
+const nextBtn = document.getElementById("nextBtn");
 
 /*********************************
- * BADGE SYSTEM (UNCHANGED)
+ * CLASS SELECTION LOGIC
  *********************************/
+if (startBtn) {
+  startBtn.onclick = () => {
+    if (!classSelect.value) {
+      alert("Please select class");
+      return;
+    }
 
+    if (classSelect.value === "8" || classSelect.value === "9") {
+      selectedClass = "8_9";
+    } else if (classSelect.value === "10") {
+      selectedClass = "10";
+    } else {
+      selectedClass = "elder";
+    }
+
+    classSelection.style.display = "none";
+    simulationArea.style.display = "block";
+    resetSimulation();
+  };
+}
+
+/*********************************
+ * BADGE SYSTEM
+ *********************************/
 function checkBadge(score) {
   const badges = {
     10: lang === "en" ? "Law Booster" : "कानून बूस्टर",
@@ -155,6 +195,8 @@ function showBadgePopup(badgeName) {
   const message = document.getElementById("badgeMessage");
   const closeBtn = document.getElementById("closeBadge");
 
+  if (!popup) return;
+
   title.innerText = lang === "en" ? "Badge Earned!" : "बैज प्राप्त हुआ!";
   message.innerText =
     lang === "en"
@@ -162,23 +204,13 @@ function showBadgePopup(badgeName) {
       : `बधाई हो! आपको "${badgeName}" बैज मिला है।`;
 
   popup.style.display = "flex";
-
   setTimeout(() => (popup.style.display = "none"), 1500);
   closeBtn.onclick = () => (popup.style.display = "none");
 }
 
-
 /*********************************
  * SIMULATION LOGIC
  *********************************/
-
-const caseBox = document.getElementById("caseBox");
-const optionsBox = document.getElementById("options");
-const scoreText = document.getElementById("scoreText");
-const nextBtn = document.getElementById("nextBtn");
-
-nextBtn.onclick = nextCase;
-
 function loadCase() {
   selected = false;
   nextBtn.disabled = true;
@@ -197,73 +229,102 @@ function loadCase() {
 }
 
 function selectOption(el, score) {
-  if (selected) return;
+  if (selected || gameOver) return;
   selected = true;
 
-  document.querySelectorAll(".option").forEach(o =>
-    o.classList.remove("selected")
-  );
+  document.querySelectorAll(".option").forEach(o => o.classList.remove("selected"));
   el.classList.add("selected");
 
   totalScore += score;
-  scoreText.innerText =
-    (lang === "en" ? "Score: " : "स्कोर: ") + totalScore;
+  scoreText.innerText = (lang === "en" ? "Score: " : "स्कोर: ") + totalScore;
 
   nextBtn.disabled = false;
   checkBadge(totalScore);
 }
 
-function nextCase() {
+nextBtn.onclick = () => {
   current++;
-
   if (current < questionBank[lang][selectedClass].length) {
     loadCase();
   } else {
     finishSimulation();
   }
-}
+};
 
 function resetSimulation() {
   current = 0;
   totalScore = 0;
   earnedBadges = [];
   gameOver = false;
-
-  scoreText.innerText =
-    (lang === "en" ? "Score: 0" : "स्कोर: 0");
-
+  scoreText.innerText = lang === "en" ? "Score: 0" : "स्कोर: 0";
+  nextBtn.style.display = "block";
   loadCase();
 }
 
-
 /*********************************
- * FINISH
+ * SAVE & SYNC DATA
  *********************************/
-
 function finishSimulation() {
-  caseBox.innerHTML = `<h3>${
-    lang === "en" ? "Final Score" : "अंतिम स्कोर"
-  }: ${totalScore}</h3>`;
-
+  gameOver = true;
+  caseBox.innerHTML = `<h3>${lang === "en" ? "Final Score" : "अंतिम स्कोर"}: ${totalScore}</h3>`;
   optionsBox.innerHTML = "";
   nextBtn.style.display = "none";
+
+  if (!db) return;
+
+  const tx = db.transaction("judgeScores", "readwrite");
+  const store = tx.objectStore("judgeScores");
+  store.add({
+    email: userEmail,
+    score: totalScore,
+    synced: false,
+    timestamp: new Date().toISOString()
+  });
+
+  syncScoresToFirebase();
 }
 
+async function saveScoreToFirebase(obj) {
+  const ref = doc(firebaseDB, "leaderboard", obj.email);
+  const snap = await getDoc(ref);
 
-/*********************************
- * LANGUAGE LOAD
- *********************************/
-
-async function loadLanguage() {
-  const res = await fetch(`./json/lang_${lang}.json`);
-  labels = await res.json();
+  // Only update if new score is higher
+  if (!snap.exists() || snap.data().score < obj.score) {
+    await setDoc(ref, {
+      email: obj.email,
+      score: obj.score,
+      updatedAt: serverTimestamp()
+    });
+  }
 }
 
+function syncScoresToFirebase() {
+  if (!db) return;
+
+  const tx = db.transaction("judgeScores", "readwrite");
+  const store = tx.objectStore("judgeScores");
+
+  store.getAll().onsuccess = async e => {
+    const results = e.target.result;
+    for (const r of results.filter(x => !x.synced)) {
+      try {
+        await saveScoreToFirebase(r);
+        r.synced = true;
+        const updateTx = db.transaction("judgeScores", "readwrite");
+        updateTx.objectStore("judgeScores").put(r);
+      } catch (err) {
+        console.error("Sync failed for:", r.email, err);
+      }
+    }
+  };
+}
 
 /*********************************
  * INIT
  *********************************/
-
 document.addEventListener("DOMContentLoaded", () => {
-  loadLanguage();
+  // If user is already in simulation (page refresh), this handles clean state
+  if (simulationArea.style.display !== "none" && selectedClass) {
+    loadCase();
+  }
 });
