@@ -8,3 +8,6 @@ const app = initializeApp(firebaseConfig);
 
 // ✅ EXPORT — do NOT attach to window
 export const firebaseDB = getFirestore(app);
+
+console.log("Config loaded:", firebaseSecretConfig);
+console.log("Firebase App initialized:", app.name);
